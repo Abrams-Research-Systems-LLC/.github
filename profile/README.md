@@ -22,6 +22,10 @@ Abrams Research Systems LLC is a U.S. small business formed in 2026 and based in
 
 This organization hosts our public code. It starts with the [AEA-STATE/1](https://github.com/Abrams-Research-Systems-LLC/Abrams-Event-Address-AEA) open reference implementation, which can be inspected and tested on a host.
 
+## 🛰️ AEA in plain English
+
+Abrams Research Systems developed AEA, a simple software record format that captures a vehicle's position, motion, orientation, and time as one consistent snapshot. When a drone, missile, or spacecraft loses GPS or radio contact from jamming, spoofing, or distance, the last recorded state is often hard to use because different systems track clocks and coordinate frames differently. AEA packages those existing measurements into a single record with a built-in corruption check so the data stays consistent and usable. The software is written and host-verified at TRL 3, and is designed to plug into existing flight software through a standard C interface. We believe that, once properly tested, AEA could help with faster recovery after loss of comms, more accurate course correction, lower processing load during recalibration, and reduced fuel spent on re-acquisition across drones, missiles, and deep-space missions.
+
 ## 📐 AEA-STATE/1 at a glance
 
 | Item | Detail |
